@@ -6,7 +6,7 @@ public class ASCII_tabel {
         int rij = 0;
         int waarde = 32;
 
-        while (waarde <= 127) {
+        while (waarde <= 383) {
             while (rij != perRij) {
                 System.out.print((char) waarde + "(" + waarde + ") ");
                 rij++;
