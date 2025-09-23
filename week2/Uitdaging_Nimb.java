@@ -36,8 +36,8 @@ public class Uitdaging_Nimb {
                 lucifers = scan.nextInt();
 
             } while (lucifers > startAantal || lucifers > 3 || lucifers < 1);
-            startAantal -= lucifers;
 
+            startAantal -= lucifers;
             System.out.println("Jij hebt " + lucifers + " lucifers genomen, er zijn er nog " + startAantal + " over.");
 
             if (startAantal <= 0){
