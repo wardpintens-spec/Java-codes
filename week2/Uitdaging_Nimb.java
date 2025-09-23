@@ -5,7 +5,7 @@ public class Uitdaging_Nimb {
     public static void main(String[]args){
 
         int startAantal = 21;
-        String beginner = "";
+        String beginner;
         int lucifers;
         int start = 1;
 
