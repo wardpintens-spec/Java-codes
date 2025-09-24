@@ -10,7 +10,6 @@ public class Autocorrect {
         int waarde;
         int som1 = 0;
         int som2 = 0;
-        int x = 0;
 
         Scanner scan = new Scanner(System.in);
 
@@ -22,20 +21,15 @@ public class Autocorrect {
         woord2 = scan.nextLine();
         lengte2 = woord2.length();
 
-        while (x != lengte1){
+        for (int x = 0; x != lengte1; x++){
             waarde = woord1.toUpperCase().charAt(x);
             som1 += waarde;
-            x++;
         }
-        x = 0;
-        while (x != lengte2){
+        for (int x = 0; x != lengte2; x++){
             waarde = woord2.toUpperCase().charAt(x);
             som2 += waarde;
-            x++;
         }
         afstand = som2 - som1;
         System.out.println("De afstand tussen " + woord1 + " en " + woord2 + " is " + Math.abs(afstand) + ".");
-
-
     }
 }
