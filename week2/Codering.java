@@ -20,7 +20,7 @@ public class Codering {
         if (optie.equals("encoderen")){
             for (int i = 0; i < lengte; i++){
                 if ((int) bericht.charAt(i) < 96){
-                newChar = (int) bericht.charAt(i);
+                newChar = bericht.charAt(i);
                 nieuwBericht.append((char) newChar);}
                 else {newChar = (int) bericht.charAt(i) + 3;
                     nieuwBericht.append((char) newChar);
@@ -30,7 +30,7 @@ public class Codering {
         }
         else {for (int i = 0; i < lengte; i++){
                 if ((int) bericht.charAt(i) < 96){
-                    newChar = (int) bericht.charAt(i);
+                    newChar = bericht.charAt(i);
                     nieuwBericht.append((char) newChar);}
                 else {newChar = (int) bericht.charAt(i) - 3;
                     nieuwBericht.append((char) newChar);
