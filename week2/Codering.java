@@ -23,7 +23,12 @@ public class Codering {
                 newChar = bericht.charAt(i);
                 nieuwBericht.append((char) newChar);}
                 else {newChar = (int) bericht.charAt(i) + 3;
-                    nieuwBericht.append((char) newChar);
+                    if (newChar > 122){
+                        newChar -= 26;
+                        nieuwBericht.append((char) newChar);
+                    }
+                    else{
+                    nieuwBericht.append((char) newChar);}
                 }
             }
             System.out.println(nieuwBericht);
@@ -33,7 +38,12 @@ public class Codering {
                     newChar = bericht.charAt(i);
                     nieuwBericht.append((char) newChar);}
                 else {newChar = (int) bericht.charAt(i) - 3;
-                    nieuwBericht.append((char) newChar);
+                    if (newChar < 97){
+                        newChar += 26;
+                        nieuwBericht.append((char) newChar);
+                    }
+                    else{
+                        nieuwBericht.append((char) newChar);}
                 }
             }
         System.out.println(nieuwBericht);
