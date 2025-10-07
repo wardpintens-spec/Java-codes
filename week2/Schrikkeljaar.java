@@ -4,7 +4,6 @@ public class Schrikkeljaar {
     public static void main(String[] args) {
         int jaartal;
 
-
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Geef een jaartal: ");
