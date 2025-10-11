@@ -2,7 +2,7 @@ package week4.Smart_lights;
 
 import java.util.Scanner;
 
-public class Main {
+public class Test {
     public static void main(String[] args) {
         Lamp livingLamp = new Lamp();
         Lamp keukenLamp = new Lamp();

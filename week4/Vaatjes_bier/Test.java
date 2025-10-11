@@ -1,6 +1,6 @@
 package week4.Vaatjes_bier;
 
-public class Main {
+public class Test {
     public static void main(String[] args) {
         Biervat biervat = new Biervat();
 

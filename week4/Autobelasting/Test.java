@@ -1,6 +1,6 @@
 package week4.Autobelasting;
 
-public class Main {
+public class Test {
     public static void auto(String merk, String type, int fiscaalvermogen){
         Auto auto = new Auto();
 
