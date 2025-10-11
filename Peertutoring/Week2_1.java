@@ -1,6 +1,6 @@
-package week2;
+package Peertutoring;
 import java.util.Scanner;
-public class Peer_opgave1 {
+public class Week2_1 {
     static void BTW(double prijs) {
         if (prijs < 0){
             prijs = 0;

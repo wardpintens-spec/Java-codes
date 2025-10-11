@@ -6,7 +6,6 @@ public class Week4 {
         System.out.println("Start");
         for (int i = 15; i > 0; i--){
             System.out.println(i);
-
             try {
                 Thread.sleep(1000); // 1 seconde wachten (1000 ms)
             } catch (InterruptedException e) {
@@ -17,14 +16,21 @@ public class Week4 {
         System.out.println("Stop");
 
     }
+    public static String limieten(double procent1, double procent2, int HHR, int rusthartslag){
+        double limiet1 = (HHR * procent1) + rusthartslag;
+        double limiet2 = (HHR * procent2) + rusthartslag;
+        return "Limieten hartslag: tussen "+ (int) limiet1 +" en " + (int) limiet2;
+
+    }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String antwoord;
         String klaar;
         int rusthartslag = 0;
         int maxhartslag;
-        int HHR;
+        int HHR = 0;
         int keuze;
+        boolean kenHHR = true;
         do {
             System.out.print("Ken je je HHR? ");
             antwoord = scan.nextLine();
@@ -32,6 +38,10 @@ public class Week4 {
             if (antwoord.toLowerCase().charAt(0) == 'j') {
                 System.out.print("Wat is je HHR? ");
                 HHR = scan.nextInt();
+                scan.nextLine();
+            }
+            else {
+                kenHHR = false;
             }
 
         }while ((antwoord.toLowerCase().charAt(0) != 'j') && (antwoord.toLowerCase().charAt(0) != 'n'));
@@ -84,12 +94,23 @@ public class Week4 {
         System.out.print("Geef het aantal slagen: ");
         maxhartslag = scan.nextInt() * 4;
 
-        HHR = maxhartslag - rusthartslag;
+        if (!kenHHR){HHR = maxhartslag - rusthartslag;}
+
         System.out.println("Uw HHR is " + HHR + ".");
 
-        System.out.print("In welke zone wilt u trainen (1-5): ");
-        keuze = scan.nextInt();
+        do{
+            System.out.print("In welke zone wilt u trainen (1-5): ");
+            keuze = scan.nextInt();
+        } while (keuze < 1 || keuze > 5);
 
-
+        String workout = switch (keuze){
+            case 1 -> limieten(0.5, 0.6, HHR, rusthartslag);
+            case 2-> limieten(0.6, 0.7, HHR, rusthartslag);
+            case 3-> limieten(0.7, 0.8, HHR, rusthartslag);
+            case 4-> limieten(0.8, 0.9, HHR, rusthartslag);
+            case 5-> limieten(0.9, 1, HHR, rusthartslag);
+            default -> "";
+        };
+        System.out.println(workout);
     }
 }

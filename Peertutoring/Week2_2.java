@@ -1,7 +1,7 @@
-package week2;
+package Peertutoring;
 import java.util.Scanner;
 
-public class Peer_opgave2 {
+public class Week2_2 {
     private static int ja = 0;
 
     static void vraag(String zin){
