@@ -1,6 +1,6 @@
 package week4.Belastingen_revisited;
 
-public class Test {
+public class Main {
     public static void main(String[] args) {
         Btw btw = new Btw();
         btw.setPercentage(6);
