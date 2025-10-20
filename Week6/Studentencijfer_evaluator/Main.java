@@ -9,8 +9,8 @@ public class Main {
         do {
 
 
-            Student student = null;
-            boolean verder = false;
+            Student student;
+            boolean verder;
             do {
                 System.out.print("Geef de naam van de student: ");
                 String naam = scan.nextLine();
@@ -28,9 +28,17 @@ public class Main {
             } while (!verder);
 
             System.out.println("Resultaten worden berekend...");
-            System.out.println(3);
-            System.out.println(2);
-            System.out.println(1);
+
+            for (int i = 3; i > 0; i--) {
+                System.out.println(i);
+                try {
+                    Thread.sleep(1000); // 1 seconde wachten (1000 ms)
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
             System.out.println("-------------------");
             System.out.println("Studenteninformatie");
             System.out.println("-------------------");

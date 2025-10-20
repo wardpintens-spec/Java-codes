@@ -11,7 +11,6 @@ public class Student {
         this.cijfer = cijfer;
     }
 
-
     public boolean isCorrect(){
         if (this.getNaam().isEmpty()){
             System.out.println();
@@ -39,9 +38,6 @@ public class Student {
 
         else {return true;}
     }
-
-
-
 
     public void setNaam(String naam){
         this.naam = naam;
@@ -77,5 +73,3 @@ public class Student {
         };
     }
 }
-
-
