@@ -7,8 +7,6 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         String antwoord = "ja";
         do {
-
-
             Student student;
             boolean verder;
             do {
