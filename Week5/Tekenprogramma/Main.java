@@ -1,5 +1,4 @@
 package Week5.Tekenprogramma;
-import java.lang.reflect.Array;
 
 import static Week5.Tekenprogramma.Colours.*;
 public class Main {
