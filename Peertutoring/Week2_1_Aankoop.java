@@ -1,6 +1,6 @@
 package Peertutoring;
 import java.util.Scanner;
-public class Week2_1 {
+public class Week2_1_Aankoop {
     static void BTW(double prijs) {
         if (prijs < 0){
             prijs = 0;
