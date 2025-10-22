@@ -33,7 +33,7 @@ public class Main {
                     Thread.sleep(1000); // 1 seconde wachten (1000 ms)
                 } catch (InterruptedException e) {
                     e.printStackTrace();
-                }iets
+                }
             }
 
             System.out.println("-------------------");
