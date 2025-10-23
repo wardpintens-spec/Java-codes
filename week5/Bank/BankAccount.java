@@ -1,4 +1,4 @@
-package Week5.Bank;
+package week5.Bank;
 
 public class BankAccount {
     private String holder;

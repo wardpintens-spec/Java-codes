@@ -1,4 +1,4 @@
-package Week5.Bibliotheek;
+package week5.Bibliotheek;
 
 public class Book {
     private boolean borrowed;

@@ -1,4 +1,4 @@
-package Week5.Bank;
+package week5.Bank;
 
 public class DemoBankAccount {
     public static void main(String[] args) {

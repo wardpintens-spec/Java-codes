@@ -1,4 +1,4 @@
-package Week6.Schaken;
+package week6.Schaken;
 
 import java.util.Random;
 

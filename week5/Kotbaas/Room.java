@@ -1,4 +1,4 @@
-package Week5.Kotbaas;
+package week5.Kotbaas;
 
 public class Room {
     private int roomNumber;

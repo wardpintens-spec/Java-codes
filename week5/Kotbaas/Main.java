@@ -1,4 +1,4 @@
-package Week5.Kotbaas;
+package week5.Kotbaas;
 
 /* Stap 1
 public class Main {

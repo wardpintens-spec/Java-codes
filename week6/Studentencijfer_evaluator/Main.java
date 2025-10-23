@@ -1,4 +1,4 @@
-package Week6.Studentencijfer_evaluator;
+package week6.Studentencijfer_evaluator;
 
 import java.util.Scanner;
 

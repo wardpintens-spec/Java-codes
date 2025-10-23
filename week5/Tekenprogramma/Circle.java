@@ -1,4 +1,4 @@
-package Week5.Tekenprogramma;
+package week5.Tekenprogramma;
 
 public class Circle {
     private double radius;

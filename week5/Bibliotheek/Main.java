@@ -1,4 +1,4 @@
-package Week5.Bibliotheek;
+package week5.Bibliotheek;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Week5.Verkopers;
+package week5.Verkopers;
 
 public class SalesPerson {
     final String name;

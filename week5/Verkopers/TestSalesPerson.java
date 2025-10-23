@@ -1,4 +1,4 @@
-package Week5.Verkopers;
+package week5.Verkopers;
 
 import java.util.Scanner;
 

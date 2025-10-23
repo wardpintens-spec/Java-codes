@@ -1,6 +1,6 @@
-package Week5.Tekenprogramma;
+package week5.Tekenprogramma;
 
-import static Week5.Tekenprogramma.Colours.*;
+import static week5.Tekenprogramma.Colours.*;
 public class Main {
     public static void main(String[] args) {
         Rectangle rectangle1 = new Rectangle(3.5, 6, CYAN);

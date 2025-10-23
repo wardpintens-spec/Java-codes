@@ -1,4 +1,4 @@
-package Week5.Verhuisfirma;
+package week5.Verhuisfirma;
 
 public class Main {
     public static void main(String[] args) {
