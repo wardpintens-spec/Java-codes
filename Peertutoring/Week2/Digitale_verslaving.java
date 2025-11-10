@@ -1,7 +1,7 @@
-package Peertutoring;
+package Peertutoring.Week2;
 import java.util.Scanner;
 
-public class Week2_2_Digitale_verslaving {
+public class Digitale_verslaving {
     private static int ja = 0;
 
     static void vraag(String zin){
