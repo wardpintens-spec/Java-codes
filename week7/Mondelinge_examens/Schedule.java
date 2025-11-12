@@ -9,13 +9,13 @@ public class Schedule {
         for (int i = 0; i < numberOfStudents; i++) {
             this.times[i] = new Time(nieuw);
             nieuw.addMinutes(minutesPerExam);
-            if (nieuw.getHour() == 10 && nieuw.getMinutes() == 0) {
+            if (nieuw.getHour() == 10 && nieuw.getMinutes() == 30) {
                 nieuw.addMinutes(15);
             }
             if (nieuw.getHour() == 12 && nieuw.getMinutes() == 0) {
                 nieuw.addMinutes(60);
             }
-            if (nieuw.getHour() == 14 && nieuw.getMinutes() == 0) {
+            if (nieuw.getHour() == 14 && nieuw.getMinutes() == 30) {
                 nieuw.addMinutes(15);
             }
 
