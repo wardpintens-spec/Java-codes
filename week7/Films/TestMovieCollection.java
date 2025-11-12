@@ -19,6 +19,7 @@ public class TestMovieCollection {
             // vul hier aan (volgnr + titel + jaar per film)
             System.out.printf("%2d. %-25s %4d%n", (i + 1), movies[i].getTitle(), movies[i].getYear());
         }
+        // vul hier aan (afdruk tabel is vol of niet vol)
         System.out.println("De tabel is " + (collection.getIsFull()? "vol!":"niet vol!"));
     }
 }
